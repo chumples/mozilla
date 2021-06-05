@@ -31,7 +31,11 @@
 
     // Add your code here
     for (let i = 0; i < myArray.length; i++) {
-        text += '<li>' + myArray[i] + '</li>';
+      let listItem = document.createElement('li');
+      listItem.textContent = myArray[i];
+      //para.textContent  
+      //list += ', ' + myArray[i];
+      list.appendChild(listItem);   
     }
 
     // Don't edit the code below here!
